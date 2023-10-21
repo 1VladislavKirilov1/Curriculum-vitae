@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Резюме</title>
+</head>
+<body>
+    <div class="resume">
+        <header>
+            <h1>Владислав, 18 лет</h1>
+            <img src="img/my_photo.jpg" alt="Влад" class="profile-photo">
+            <p>Начинающий Fullstack-разработчик</p>
+        </header>
+
+        <section class="collapsible">
+            <h2>Обо мне</h2>
+            <button class="collapsible-button">Показать/Скрыть</button>
+            <div class="collapsible-content">
+                <p>
+                    Привет, я Влад, начинающий Fullstack-разработчик. Имею опыт работы в Django, PostgreSQL и JavaScript.
+                    Я стремлюсь к постоянному развитию и готов брать на себя новые вызовы в мире веб-разработки.
+                </p>
+
+            <h2>Образование</h2>
+                <ul>
+                    <li>Прохожу курс Fullstack Python Developer (FPW) от SkillFactory.</li>
+                    <p>Май 2022 - настоящее время</p>
+                </ul>
+            </div>
+        </section>
+
+        <section class="skillbar">
+            <h2>Навыки</h2>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="skill-level" style="width: 90%;">90%</div>
+            </div>
+            <div class="skill">
+                <h3>Django</h3>
+                <div class="skill-level" style="width: 80%;">80%</div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="skill-level" style="width: 70%;">70%</div>
+            </div>
+            <div class="skill">
+                <h3>PostgreSQL</h3>
+                <div class="skill-level" style="width: 85%;">85%</div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const collapsibleButton = document.querySelector('.collapsible-button');
+        const collapsibleContent = document.querySelector('.collapsible-content');
+
+        collapsibleButton.addEventListener('click', () => {
+            collapsibleContent.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
